@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kasirin POS</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="products-section">
+    <h2>Produk</h2>
+
+    <input
+      type="text"
+      id="search"
+      placeholder="Scan barcode / cari produk"
+    >
+
+    <div id="product-list"></div>
+  </div>
+
+  <div class="cart-section">
+
+    <h2>Keranjang</h2>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-footer">
+      <h3>Total: Rp <span id="total">0</span></h3>
+
+      <input type="number" id="paid" placeholder="Bayar">
+
+      <button id="pay-btn">
+        Bayar (F2)
+      </button>
+
+      <button id="cancel-btn" class="danger">
+        Batal (F3)
+      </button>
+    </div>
+
+  </div>
+
+</div>
+
+<script type="module" src="./js/main.js"></script>
+
+</body>
+</html>
