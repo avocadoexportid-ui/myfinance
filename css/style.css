@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background: #F8FAFC;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  height: 100vh;
+}
+
+.products-section,
+.cart-section {
+  padding: 20px;
+}
+
+.products-section {
+  background: white;
+}
+
+.cart-section {
+  border-left: 1px solid #ddd;
+}
+
+button {
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #2563EB;
+  color: white;
+}
+
+button.danger {
+  background: #EF4444;
+}
